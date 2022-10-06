@@ -3,7 +3,7 @@
 # Script attempts to merge the configured $BRANCH and any children. Be warned of the potential consequences of a merge and monitor the logs. 
 
 BASE_URL="http://localhost:8080" # no trailing slash
-BRANCH="MAIN/SNOMEDCT-NO"
+BRANCH="$1"
 WORK_FOLDER="/home/azureuser/bin"
 FILE="$WORK_FOLDER"/"branch_list.txt"
 cd "$WORK_FOLDER"
